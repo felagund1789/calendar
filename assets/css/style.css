@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.wrapper{
+	width: 80%;
+	margin: 30px auto 10px;
+}
+.wrapper a:hover{
+  	text-decoration: none;
+}
+.wrapper input:focus,
+.wrapper textarea:focus,
+.wrapper button:focus{
+  	box-shadow: unset;
+}
+.wrapper .btn-custom{
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    padding: 5px 30px;
+}
+.wrapper .btn-custom:focus{
+    outline: none;
+    box-shadow:unset;
+}
+.wrapper .header{
+	margin: 20px 0;
+}
+.wrapper .header h3{
+	text-align: center;
+}
+.wrapper .content{
+	border: 1px solid #ccc;
+	background-color: #f4f5fa;
+	width: 100%;
+	padding: 10px 15px;
+}
+.wrapper .content .total-week-hour{
+	margin: 0 0 10px 0;
+	text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+.wrapper .content #calendar{
+  	background-color: #fff;
+  	padding: 10px;
+}
+.wrapper .content #calendar .fc-timeGridDay-view .fc-widget-content .fc-scroller,
+.wrapper .content #calendar .fc-timeGridWeek-view .fc-widget-content .fc-scroller,
+.wrapper .content #calendar .fc-dayGridMonth-view .fc-widget-content .fc-scroller,
+.wrapper .content #calendar .fc-list-view .fc-scroller{
+  	height: auto !important;
+}
+.wrapper .content #calendar .fc-event-container .fc-title{
+	width: 100%;
+}
+.wrapper .content #calendar .event-detail{
+	margin: 3px;
+}
+.wrapper .content #calendar .event-detail .event-detail-flex{
+	display: flex;
+	justify-content: space-between;
+}
+.wrapper .content #calendar .event-detail .event-detail-flex a{
+    color: #fff;
+}
+.wrapper .content #calendar .event-detail h6{
+  	font-size: 12px;
+  	font-weight: bold;
+}
+.wrapper .content #calendar .total-week-day-hour{
+	border: 1px solid #ddd;
+}
+.wrapper .content #calendar .total-week-day-hour tr th{
+	line-height: 40px;
+}
+.wrapper .content .card .card-header{
+	background-color: #fff;
+	border-bottom: 1px solid #D1D5EA;
+}
+.wrapper .content .card .card-header .card-title{
+	margin: 0;
+  	font-weight: 500;
+}
+.wrapper .content .card .card-body{
+  	padding: 0;
+}
+.wrapper .content .card .card-body .form-body{
+  	padding: 0 10px;
+}
+.wrapper .content .card .card-body .form-group{
+	display: flex;
+  	padding: 0;
+	margin: 20px 0;
+}
+.wrapper .content .card .card-body .form-control{
+	box-shadow:unset;
+}
+.wrapper .content .card .card-footer{
+	background-color: #fff;
+	text-align: center;
+}
+.wrapper .content .card .card-footer .btn-create,
+.wrapper .content .card .card-footer .btn-update{
+	background-color: #2c3e50;
+	color: #fff;
+}
+.wrapper .content .card .card-footer .btn-delete{
+	background-color: #b91f1f;
+	color: #fff;
+}
+.wrapper .content .card .card-footer .btn-cancel{
+	background-color: #fff;
+	color: #2c3e50;
+	border-color: #2c3e50;
+}
+@media only screen and (max-width:900px){
+	.wrapper .content .modal-dialog{
+		max-width: 520px;
+	}
+	.wrapper .content #calendar .fc-toolbar{
+		display: block;
+	}
+	.wrapper .content #calendar .fc-left,
+	.wrapper .content #calendar .fc-center,
+	.wrapper .content #calendar .fc-right{
+		text-align: center;
+	}
+	.wrapper .content #calendar .fc-center,
+	.wrapper .content #calendar .fc-right>div{
+		margin:15px 0;
+	}
+	.wrapper .content #calendar .fc-center h2{
+		font-size: 21px;
+	}
+}
+@media only screen and (max-width:600px){
+	.wrapper{
+		width: 100%;
+	}
+	.wrap .content #calendar th,
+	.wrap .content #calendar td{
+		font-size: 9px;
+	}
+}
+@media only screen and (max-width:400px){
+	.wrap .content .form-content{
+		grid-template-columns: 1fr;
+	}
+}
+@media only screen and (max-width:330px){
+	.wrap .content #calendar .fc-left>.fc-button{
+		margin-top: 10px;
+	}
+	.wrap .content #calendar .fc-right .fc-button{
+		font-size: 12px;
+		font-size: 12px;
+	}
+}
